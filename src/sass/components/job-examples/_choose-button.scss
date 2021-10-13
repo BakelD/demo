@@ -1,0 +1,30 @@
+.choose-button {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  width: 100%;
+
+  border: 0;
+  background-color: var(--white-color);
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    display: block;
+    height: 0.5px;
+    width: calc(100% + 2 * 10px);
+    background-color: var(--thin-border-color);
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+}

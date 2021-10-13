@@ -1,0 +1,57 @@
+.job-list {
+}
+
+.job-list__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.job-list__about-info {
+  flex-basis: 140px;
+  flex-grow: 1;
+}
+
+.job-list__title {
+  font-family: 'Gilroy 900', sans-serif;
+  font-size: 15px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.job-list__paragraph {
+}
+
+.job-list__photo {
+  position: relative;
+  flex-basis: 160px;
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    right: 0;
+    bottom: 0;
+    content: '';
+    height: 145px;
+    width: 145px;
+    background-color: var(--bg-color);
+  }
+}
+
+.job-list__order-info {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+}
+
+.job-list__price {
+}
+
+.job-list__price-accent {
+  display: block;
+  font-family: 'Gilroy 900', sans-serif;
+  font-size: 20px;
+}
+
+.job-list__price-annex {
+  display: block;
+}

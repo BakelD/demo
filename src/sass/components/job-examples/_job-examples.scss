@@ -1,2 +1,27 @@
 @import './choose-button';
-@import './job-item';
+@import './job-list';
+
+.job-examples__image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 150px;
+}
+
+.job-examples__title {
+  font-family: 'Gilroy 900', sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  &::after {
+    content: '';
+    display: block;
+    margin-top: 6px;
+
+    width: 40px;
+    height: 4px;
+
+    background-color: var(--accent-color);
+  }
+}
