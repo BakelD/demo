@@ -89,6 +89,10 @@ img {
   overflow: hidden;
 }
 
+.icon {
+  fill: currentColor;
+}
+
 .container {
   width: 100%;
   padding-left: 10px;

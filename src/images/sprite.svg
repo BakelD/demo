@@ -14,5 +14,8 @@
     <symbol id="menu-open" viewBox="0 0 48 32">
       <path d="M0 0h48v6.4h-48zM0 12.8h48v6.4h-48zM0 25.6h48v6.4h-48z"></path>
     </symbol>
+    <symbol id="hero-btn" viewBox="0 0 32 32">
+      <path d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+    </symbol>
   </defs>
 </svg>
