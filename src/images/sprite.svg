@@ -20,5 +20,8 @@
 		<symbol id="list-close" viewBox="0 0 12 5">
 			<path d="M6 0L11.1962 4.5H0.803848L6 0Z" fill="#222222"/>
     </symbol>
+    <symbol id="hero-btn" viewBox="0 0 32 32">
+      <path d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+    </symbol>
   </defs>
 </svg>
