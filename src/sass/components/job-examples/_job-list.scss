@@ -1,4 +1,5 @@
 .job-list {
+  // empty parent class
 }
 
 .job-list__item {
@@ -9,6 +10,11 @@
 .job-list__about-info {
   flex-basis: 140px;
   flex-grow: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
 }
 
 .job-list__title {
@@ -16,9 +22,6 @@
   font-size: 15px;
   line-height: 1.2;
   text-transform: uppercase;
-}
-
-.job-list__paragraph {
 }
 
 .job-list__photo {
@@ -38,12 +41,10 @@
 }
 
 .job-list__order-info {
+  margin-top: 22px;
   display: flex;
   flex-basis: 100%;
   justify-content: space-between;
-}
-
-.job-list__price {
 }
 
 .job-list__price-accent {
