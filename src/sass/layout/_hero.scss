@@ -1,0 +1,95 @@
+.hero {
+  padding-top: 25px;
+  padding-bottom: 40px;
+
+  &__main-block {
+    display: flex;
+  }
+
+  &__left-block {
+    margin-right: -20px;
+    align-self: flex-end;
+    @media screen and (max-width: 767px) {
+      min-width: 140px;
+    }
+  }
+
+  &__title {
+    font-family: 'Gilroy-900';
+    font-size: 18px;
+    line-height: calc(21 / 18);
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+
+    &::after {
+      display: block;
+      content: '';
+      width: 40px;
+      height: 4px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      background-color: var(--accent-color);
+    }
+  }
+
+  &__text {
+  }
+
+  &__right-block {
+    position: relative;
+    left: -10px;
+    @media screen and (max-width: 767px) {
+      flex-basis: calc(50%);
+    }
+  }
+
+  &__picture {
+    display: block;
+    position: relative;
+    width: 170px;
+    height: 170px;
+
+    &::before {
+      position: absolute;
+      bottom: 0;
+      right: -10px;
+      content: '';
+      min-width: 145px;
+      min-height: 145px;
+      background-color: var(--bg-color);
+      z-index: -1;
+    }
+  }
+
+  &__btn-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+  }
+
+  &__btn-item {
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+    border-radius: 50%;
+    color: var(--primary-text-color);
+    background-color: var(--white-color);
+    opacity: 0.1;
+    &.active {
+      color: var(--accent-color);
+      border-color: var(--accent-color);
+      opacity: 1;
+    }
+    &:hover,
+    &:focus {
+      color: blue;
+      border-color: blue;
+      opacity: 1;
+    }
+  }
+}
