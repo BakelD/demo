@@ -1,0 +1,44 @@
+@import './choose-button';
+@import './job-list';
+
+.job-examples {
+  position: relative;
+  padding: 36px 0 72px 0;
+}
+
+.job-examples__image {
+  position: absolute;
+  left: 50%;
+  display: block;
+  max-width: 150px;
+
+  &--head {
+    bottom: 100%;
+    transform: translate(-50%, 50%);
+  }
+
+  &--bottom {
+    top: 100%;
+    transform: translate(-50%, -75%);
+  }
+}
+
+.job-examples__title {
+  margin-bottom: 36px;
+
+  font-family: 'Gilroy 900', sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  &::after {
+    content: '';
+    display: block;
+    margin-top: 6px;
+
+    width: 40px;
+    height: 4px;
+
+    background-color: var(--accent-color);
+  }
+}
