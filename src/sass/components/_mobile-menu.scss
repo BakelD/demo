@@ -46,7 +46,6 @@
   }
 
   &__item {
-    display: inline-flex;
     margin-bottom: 36px;
     font-size: 20px;
     line-height: calc(23 / 20);
@@ -68,6 +67,7 @@
         margin-bottom: 6px;
         background-color: var(--primary-text-color);
       }
+
       &::after {
         display: block;
         content: '';
