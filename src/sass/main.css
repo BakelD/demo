@@ -4,19 +4,29 @@
  * Все паршалы подключаются сюда.
  */
 @font-face {
-  font-family: "Gilroy 100";
-  src: url("../fonts/Gilroy-Light.eot");
+  font-family: 'Gilroy 100';
+  src: url('../fonts/Gilroy-Light.eot');
   /* IE9 Compat Modes */
-  src: url("../fonts/Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.ttf") format("truetype"), url("../fonts/Gilroy-Light.svg#svgFontName") format("svg");
+  src: url('../fonts/Gilroy-Light.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy-Light.woff2') format('woff2'),
+    url('../fonts/Gilroy-Light.woff') format('woff'),
+    url('../fonts/Gilroy-Light.ttf') format('truetype'),
+    url('../fonts/Gilroy-Light.svg#svgFontName') format('svg');
   /* Legacy iOS */
 }
+
 @font-face {
-  font-family: "Gilroy 900";
-  src: url("../fonts/Gilroy-ExtraBold.eot");
+  font-family: 'Gilroy 900';
+  src: url('../fonts/Gilroy-ExtraBold.eot');
   /* IE9 Compat Modes */
-  src: url("../fonts/Gilroy-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-ExtraBold.woff2") format("woff2"), url("../fonts/Gilroy-ExtraBold.woff") format("woff"), url("../fonts/Gilroy-ExtraBold.ttf") format("truetype"), url("../fonts/Gilroy-ExtraBold.svg#svgFontName") format("svg");
+  src: url('../fonts/Gilroy-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy-ExtraBold.woff2') format('woff2'),
+    url('../fonts/Gilroy-ExtraBold.woff') format('woff'),
+    url('../fonts/Gilroy-ExtraBold.ttf') format('truetype'),
+    url('../fonts/Gilroy-ExtraBold.svg#svgFontName') format('svg');
   /* Legacy iOS */
 }
+
 :root {
   --accent-color: #ff312e;
   --primary-text-color: #222222;
@@ -26,11 +36,11 @@
 }
 
 .some {
-  font-family: "Gilroy 900", sans-serif;
+  font-family: 'Gilroy 900', sans-serif;
 }
 
 body {
-  font-family: "Gilroy 100", sans-serif;
+  font-family: 'Gilroy 100', sans-serif;
   font-size: 11px;
   line-height: 1.545;
   color: var(--primary-text-color);
@@ -66,7 +76,7 @@ img {
 }
 
 .btn {
-  font-family: "Gilroy 900", sans-serif;
+  font-family: 'Gilroy 900', sans-serif;
   font-size: 11px;
   line-height: 1.181;
   font-weight: 900;
@@ -87,6 +97,7 @@ img {
   padding: 0;
   border: 0;
   white-space: nowrap;
+  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -101,12 +112,14 @@ img {
   padding-left: 10px;
   padding-right: 10px;
 }
+
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
     margin: 0 auto;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
@@ -120,6 +133,7 @@ img {
   color: var(--primary-text-color);
   text-transform: uppercase;
 }
+
 .section-title-pale {
   font-family: Gilroy;
   font-size: 28px;
@@ -160,7 +174,7 @@ img {
   position: absolute;
   top: -15px;
   display: block;
-  content: "";
+  content: '';
   width: 100%;
   height: 1px;
   background-color: var(--primary-text-color);
@@ -176,7 +190,7 @@ img {
 }
 .mobile-menu__link.active::before {
   display: block;
-  content: "";
+  content: '';
   width: 100%;
   height: 1px;
   margin-bottom: 6px;
@@ -184,13 +198,14 @@ img {
 }
 .mobile-menu__link.active::after {
   display: block;
-  content: "";
+  content: '';
   width: 100%;
   height: 1px;
   margin-top: 6px;
   background-color: var(--primary-text-color);
 }
-.mobile-menu__link:hover, .mobile-menu__link:focus {
+.mobile-menu__link:hover,
+.mobile-menu__link:focus {
   color: var(--accent-color);
 }
 
@@ -202,4 +217,4 @@ img {
   height: 100vh;
   background-color: var(--white-color);
   overflow: scroll;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
