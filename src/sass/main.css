@@ -130,19 +130,26 @@ img {
 }
 
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   width: 100vw;
   height: 100vh;
+  transform: translateX(100%);
   padding-top: 120px;
   padding-bottom: 120px;
   text-align: center;
+  background-color: var(--white-color);
+  overflow: scroll;
+  transition: transform 250ms;
 }
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
   }
+}
+.mobile-menu.is-open {
+  transform: translateX(0%);
 }
 .mobile-menu__close {
   position: absolute;
@@ -193,16 +200,6 @@ img {
 }
 .mobile-menu__link:hover, .mobile-menu__link:focus {
   color: var(--accent-color);
-}
-
-.backdrop {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--white-color);
-  overflow: scroll;
 }
 
 .choose-button {
