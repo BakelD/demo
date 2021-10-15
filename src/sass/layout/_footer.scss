@@ -67,13 +67,13 @@
     }
   }
   @media screen and (min-width: 768px) {
-    &-location {
+    &--location {
       text-align: left;
     }
-    &-phone {
+    &--phone {
       text-align: center;
     }
-    &-mail {
+    &--mail {
       text-align: right;
     }
   }
@@ -99,7 +99,7 @@
 .address-list__text {
   line-height: calc(13 / 11);
   @media screen and (min-widht: 768px) {
-    line-height: calc(15 / 18);
+    line-height: calc(18 / 15);
   }
 }
 .footer-wrapper-down {
@@ -166,7 +166,7 @@
   }
 }
 .footer-nav__link {
-  color: inherit;
+  color: currentColor;
 }
 .wrapper-social {
   @media screen and (min-width: 768px) {
