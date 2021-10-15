@@ -5,6 +5,14 @@
     line-height: 1.167;
     color: var(--primary-text-color);
     text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+      font-size: 40px;
+      line-height: calc(94 / 80);
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 80px;
+      line-height: calc(94 / 80);
+    }
   }
 
   &-title-pale {
@@ -13,5 +21,13 @@
     line-height: 1.179;
     color: var(--white-color);
     text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+      font-size: 44px;
+      line-height: calc(98 / 84);
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 84px;
+      line-height: calc(98 / 84);
+    }
   }
 }
