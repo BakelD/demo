@@ -24,20 +24,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    &--phone {
-      font-family: 'Gilroy 900', sans-serif;
-      color: var(--primary-text-color);
-      &:hover,
-      &:focus {
-        color: var(--accent-color);
-      }
+  }
+
+  &__phone {
+    font-family: 'Gilroy 900', sans-serif;
+    color: var(--primary-text-color);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
     }
-    &--mail {
-      color: var(--primary-text-color);
-      &:hover,
-      &:focus {
-        color: var(--accent-color);
-      }
+  }
+
+  &__mail {
+    color: var(--primary-text-color);
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
     }
   }
 
