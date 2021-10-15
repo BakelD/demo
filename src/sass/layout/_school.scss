@@ -8,8 +8,7 @@
     text-align: center;
     margin-bottom: 22px;
     line-height: 0.75;
-}
-.section-title-school::before{
+    &::before{
     position: absolute;
     content: "";
     display: block;
@@ -18,19 +17,19 @@
     transform: translateY(-50%, -50%);
     width: 40px;
     height: 4px;
-    background-color: var(--accent-color);
+    }
 }
+
 .section-after-title {
     font-family: 'Gilroy 100', sans-serif;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
     font-size: 11px;
     line-height: 1.55;
     margin-bottom: 57px;
     max-width: 259px;
 }
-.school-list {
+.school {
     position: relative;
     z-index: 4;
     display: block;
@@ -47,21 +46,20 @@
     &:not(:last-child) {
         margin-bottom: 39px;
     }
-    &-title {
+    &__title {
     font-family: 'Gilroy 900', sans-serif;
     font-size: 15px;
     line-height: 1.2;
     text-transform: uppercase;
-
     }
-    &-text {
-        font-family: 'Gilroy 100', sans-serif;
-        font-size: 11px;
-        line-height: 1.55;
-        max-width: 156px;
-        @media screen and (min-width: 1200px) {
-            max-width: 206px;
-        }
+    &__text {
+    font-family: 'Gilroy 100', sans-serif;
+    font-size: 11px;
+    line-height: 1.55;
+    max-width: 156px;
+    @media screen and (min-width: 1200px) {
+    max-width: 206px;
+    }
     }
 }
 
@@ -123,16 +121,31 @@
     display: block;
     position: relative;
     margin: 0 auto;
-}
-.btn.btn-school::after{
+    &::after{
     display: block;
     position: absolute;
     content: "";
-    background-image: url('../images/school@2x.png');
-    background-size: contain;
     width: 150px;
     height: 150px;
     top: 10px;
     left: 41px;
- ;
+    background-image: url('../images/school.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/school@2x.png');
+    }
+    @media screen and (min-width: 1200px) {
+        width: 384px;
+        background-image: url('../images/school.desktop.png');
+    }
+    @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/school.desktop@2x.png');
+    }
+    }
 }
