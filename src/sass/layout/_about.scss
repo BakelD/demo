@@ -1,0 +1,128 @@
+.about-list {
+  @media screen and (max-width: 1199px) {
+    margin-top: 36px;
+    margin-bottom: 18px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 102px;
+    max-width: 996px;
+  }
+
+  &__item {
+    display: flex;
+    padding: 18px;
+    background-color: var(--bg-color);
+
+    @media screen and (min-width: 1200px) {
+      position: relative;
+      padding: 80px 189px 80px 219px;
+    }
+  }
+
+  &__img {
+    display: block;
+    flex-shrink: 0;
+    margin-right: 12px;
+
+    @media screen and (min-width: 1200px) {
+      position: absolute;
+      top: -34px;
+      left: -51px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    font-family: 'Gilroy 900', sans-serif;
+    font-size: 15px;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 28px;
+      font-size: 22px;
+      line-height: 1.182;
+    }
+  }
+
+  &__text {
+    font-family: 'Gilroy 100', sans-serif;
+    font-size: 11px;
+    line-height: 1.545;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 28px;
+      font-size: 15px;
+      line-height: 1.467;
+    }
+  }
+}
+
+.slider-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 184px;
+  height: 20px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 1200px) {
+    transform: rotate(90deg);
+    align-self: center;
+    width: 400px;
+    margin-left: -50px;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+
+    &:hover {
+      border-color: var(--accent-color);
+      cursor: pointer;
+    }
+  }
+
+  &__circle {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--primary-text-color);
+    opacity: 0.1;
+
+    .slider-list__item:hover & {
+      background-color: var(--accent-color);
+      opacity: 1;
+    }
+  }
+}
+
+.about__link {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    width: 200px;
+    margin: 0 auto;
+    font-size: 17px;
+    line-height: 1.294;
+    color: var(--primary-text-color);
+  }
+}
+
+.about__link::after {
+  content: '';
+  width: 30px;
+  height: 22px;
+  margin-left: 10px;
+  background-image: url(../images/about/arrow.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
