@@ -1,36 +1,42 @@
-<section class="section">
-  <h2 class="section-title">слова о нас</h2>
+<section class="section section-about">
+  <div class="container">
+    <h2 class="section-title section-title--dark">слова о нас</h2>
 
-  <ul class="list about-list">
-    <li class="about-list__item">
-      <picture>
-        <source
-          srcset="./images/about/img1.jpg 1x, ./images/about/img1@2x.jpg 2x"
-          media="(max-width: 767px)"
-        />
-        <source
-          srcset="./images/about/img2.jpg 1x, ./images/about/img2@2x.jpg 2x"
-          media="(min-width: 768px)"
-        />
-        <img src="./images/about/img1.jpg" alt="анна ходокова" width="48" height="48" />
-      </picture>
+    <div class="section-about__wrapper">
+      <ul class="list about-list">
+        <li class="about-list__item">
+          <picture class="about-list__img">
+            <source
+              srcset="./images/about/img1.jpg 1x, ./images/about/img1@2x.jpg 2x"
+              media="(max-width: 767px)"
+            />
+            <source
+              srcset="./images/about/img2.jpg 1x, ./images/about/img2@2x.jpg 2x"
+              media="(min-width: 768px)"
+            />
+            <img src="./images/about/img1.jpg" alt="анна ходокова" width="48" height="48" />
+          </picture>
 
-      <div class="about-list__info">
-        <h3 class="about-list__title">анна ходокова</h3>
-        <p class="about-list__text">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-          laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
-          architecto.
-        </p>
-      </div>
-    </li>
-  </ul>
+          <div class="about-list__info">
+            <h3 class="about-list__title">анна ходокова</h3>
+            <p class="about-list__text">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+              laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+              architecto.
+            </p>
+          </div>
+        </li>
+      </ul>
 
-  <ul class="list slider-list">
-    <li class="slider-list__item"><span class="slider-list__circle"></span></li>
-    <li class="slider-list__item"><span class="slider-list__circle"></span></li>
-    <li class="slider-list__item"><span class="slider-list__circle"></span></li>
-    <li class="slider-list__item"><span class="slider-list__circle"></span></li>
-    <li class="slider-list__item"><span class="slider-list__circle"></span></li>
-  </ul>
+      <ul class="list slider-list">
+        <li class="slider-list__item"><span class="slider-list__circle"></span></li>
+        <li class="slider-list__item"><span class="slider-list__circle"></span></li>
+        <li class="slider-list__item"><span class="slider-list__circle"></span></li>
+        <li class="slider-list__item"><span class="slider-list__circle"></span></li>
+        <li class="slider-list__item"><span class="slider-list__circle"></span></li>
+      </ul>
+    </div>
+
+    <a href="" class="link about__link">Читать все отзывы</a>
+  </div>
 </section>
