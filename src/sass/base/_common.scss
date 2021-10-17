@@ -3,6 +3,14 @@ body {
   font-size: 11px;
   line-height: 1.545;
   color: var(--primary-text-color);
+  @media screen and (min-width: 768px) {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 15px;
+    line-height: calc(22 / 15);
+  }
 }
 
 h1,
