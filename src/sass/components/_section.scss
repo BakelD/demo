@@ -1,17 +1,61 @@
 .section {
   &-title {
-    font-family: Gilroy;
+    font-family: 'Gilroy 900', sans-serif;
+    text-transform: uppercase;
+  }
+
+  &-title::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 4px;
+    margin-top: 6px;
+    background-color: var(--accent-color);
+
+    @media screen and (min-width: 1200px) {
+      width: 102px;
+      height: 6px;
+      margin-top: 10px;
+    }
+  }
+
+  &-title--dark {
     font-size: 24px;
     line-height: 1.167;
     color: var(--primary-text-color);
     text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+      font-size: 40px;
+      line-height: 1.175;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 80px;
+    }
   }
 
-  &-title-pale {
-    font-family: Gilroy;
+  &-title--pale {
     font-size: 28px;
     line-height: 1.179;
     color: var(--white-color);
     text-transform: uppercase;
+    @media screen and (min-width: 768px) {
+      font-size: 44px;
+      line-height: 1.167;
+    }
+    @media screen and (min-width: 1200px) {
+      font-size: 84px;
+    }
+}
+
+.section-about {
+  padding-top: 36px;
+  padding-bottom: 72px;
+
+  &__wrapper {
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 130px auto 40px auto;
+    }
   }
 }

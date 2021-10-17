@@ -14,7 +14,8 @@
         "layout/_school.scss",
         "components/job-examples/_job-examples.scss",
         "components/job-examples/_choose-button.scss",
-        "components/job-examples/_job-list.scss"
+        "components/job-examples/_job-list.scss",
+        "layout/_about.scss"
     ],
     "names": [],
     "file": "main.css"
